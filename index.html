@@ -14,19 +14,61 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12 col-sm-6">
-                <h1>Please login here</h1>
+                <div class="leftside">
+
+                    <h1>Please login here</h1>
+                </div>
     
             </div>
 
             <div class = "col-12 col-sm-6 ">
-                <h1>place carousel right side of the website</h1>
-                
+                <div class="rightside">
+
+                    <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="images/pic4.jpg" class="img-fluid" alt="pic1">
+                                <div class="carousel-caption">
+                                    <h4 style="color: darkgray;">Neil Gaiman</h4>
+                                    <p style="color: black;">"Google can bring you back 100,000 answers, a librarian can bring you back the right one</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pic2.jpg"class="img-fluid" alt="pic2">
+                                <div class="carousel-caption">
+                                    
+                                    <h4 style="color: darkgray;">Albert Einstein</h4>
+                                    
+                                    <p style="color: black;">"The only thing that you absolutely have to know, is the location of the library."
+                                    </p>
+                                </div>    
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pic3.jpg" class="img-fluid" alt="pic3">
+                                <div class="carousel-caption">
+                                    <h4 style="color: darkgray;">Henri Frederic Amiel</h4>
+                                    <p style="color: black;">"Everything you need for better future and success has already been written. And guess what? All you have to do is go to the library."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
