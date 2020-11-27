@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="{% static 'users/styles.css' %}">
     <link rel="stylesheet" href="css\node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css\node_modules/bootstrap-social/bootstrap-social.css">
 </head>
@@ -23,14 +24,15 @@
                         </div>
                         <div class="col-12 col-md-9 row">
                             <p>
-                                Bad libraries build collections, good libraries build services, 
+                                Bad libraries build collections, good libraries build services,
                                 great libraries build communities.
                             </p>
                         </div>
-                        
+
                     </div>
                 <div class="col-12 col-md-9">
-                    <form>
+                    <form method="post">
+                        {% csrf_token %}
                         <div class="input-container space">
                             <i class="fa fa-user icon fa-2x"></i>
                             <input class="input-field" type="text" placeholder="Username" name="usrnm">
@@ -39,9 +41,10 @@
                             <i class="fa fa-key icon fa-2x"></i>
                             <input class="input-field" type="password" placeholder="Password" name="psw">
                         </div>
+                        {{form}}
                         <div class="text-center space">
                             <button type="submit" class="ml-10 btn btn-md btn-primary">Login</button>
-                        </div>     
+                        </div>
                     </form>
                 </div>
                 </div>
@@ -63,9 +66,9 @@
                                     <h4 style="color: darkgray;">Albert Einstein</h4>
                                     <p style="color: black;">"The only thing that you absolutely have to know, is the location of the library."
                                     </p>
-                                </div>   
+                                </div>
                                 <img src="images/pic2.jpg"class="img-fluid" alt="pic2">
-                                
+
                             </div>
                             <div class="carousel-item">
                                 <img src="images/pic3.jpg" class="img-fluid" alt="pic3">
